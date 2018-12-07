@@ -6,7 +6,8 @@ const path = require('path');
 const port = process.env.PORT || 3000;
 const cors = require('cors')
 const app = express();
-const reviews = require('./routes/reviews_route')
+const reviews = require('./routes/reviews_route');
+const users = require('./db/routes/users_route')
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}))
