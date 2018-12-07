@@ -1,9 +1,9 @@
 const express = require('express')
 const router = express.Router()
-const queries = require('../queries/users_queries.js_queries')
+const queries = require('../queries/users_queries')
 
 router.get('/', (req, res) => {
-    queries.getAll().then(reviews => res.status(200).send(users))
+    queries.getAll().then(users => res.status(200).send(users))
 })
 
 router.get('/:id', (req, res) => {
