@@ -13,6 +13,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(cors());
 app.use('/reviews', reviews)
+app.use('/users', users)
 
 const snacks = require('./db/routes/snacks');
 app.use('/api', snacks);
