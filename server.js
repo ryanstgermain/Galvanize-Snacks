@@ -6,6 +6,7 @@ const path = require('path');
 const port = process.env.PORT || 3000;
 const cors = require('cors')
 const app = express();
+const users = require('./db/routes/users_route')
 const reviews = require('./db/routes/reviews_route')
 
 app.use(bodyParser.json());
