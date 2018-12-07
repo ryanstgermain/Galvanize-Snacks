@@ -1,5 +1,5 @@
 const express = require('express');
-const knex = require('../db/knex');
+const knex = require('../knex');
 
 const router = express.Router();
 
